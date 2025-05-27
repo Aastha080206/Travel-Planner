@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <title>TripNest | Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="planner-page">
+  <div class="page-overlay fade-in">
+
+    <h1 id="welcomeText">Hi Traveler!</h1>
+<div class="top-bar">🌍 TripNest</div>
+
+    <div class="planner-container">
+      
+      <!-- Travel Plans -->
+      <div class="glass-card">
+        <h2>🧭 Your Travel Plans</h2>
+        <form id="planForm" class="input-form">
+          <input type="text" id="destination" placeholder="Destination (e.g. Rome)" required>
+          <input type="month" id="travelDate" required>
+          <button type="submit">➕ Add Plan</button>
+        </form>
+        <ul id="planList"></ul>
+      </div>
+
+      <!-- Things To Do -->
+      <div class="glass-card">
+        <h2>📋 Things To Do</h2>
+        <form id="todoForm" class="input-form">
+          <input type="text" id="todoInput" placeholder="e.g. Book hotel" required>
+          <button type="submit">➕ Add Task</button>
+        </form>
+        <ul id="todoList"></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

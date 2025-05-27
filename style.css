@@ -1,0 +1,227 @@
+/* Universal */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.form-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: linear-gradient(145deg, #fbc687, #e08e4b);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.app-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* === FONTS & RESET === */
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* === OVERLAY & FADE === */
+.page-overlay {
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* === MAIN HEADER === */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* === PLANNER LAYOUT === */
+.planner-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* === GLASS CARDS === */
+.glass-card {
+  flex: 1 1 450px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  color: #fff;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/* === HEADINGS INSIDE CARDS === */
+.glass-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* === FORMS === */
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.input-form input {
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+.input-form button {
+  padding: 10px 20px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.input-form button:hover {
+  background-color: #019877;
+}
+
+/* === LISTS === */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+li {
+  background: #ffffffcc;
+  color: #222;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  animation: slideIn 0.4s ease;
+  text-align: center;
+  position: relative;
+}
+@keyframes slideIn {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* === BUTTONS INSIDE LISTS === */
+li button {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.edit-btn {
+  background-color: #f1c40f;
+  color: black;
+}
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .planner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+.top-bar {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
